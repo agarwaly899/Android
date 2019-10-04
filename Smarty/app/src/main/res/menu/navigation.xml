@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homy"
+        android:icon="@drawable/ic_action_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/mode"
+        android:icon="@drawable/ic_action_mode"
+        android:title="Mode" />
+    <item
+        android:id="@+id/sensor"
+        android:icon="@drawable/ic_action_sensor"
+        android:title="Sensor" />
+
+    <item
+        
+        android:id="@+id/reminder"
+        android:icon="@drawable/ic_action_reminder"
+        android:title="Reminder" />
+
+    <item
+        android:id="@+id/alarm"
+        android:icon="@drawable/ic_action_alarm"
+        android:title="Alarm" />
+
+</menu>
