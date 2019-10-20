@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VehicleActivity"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/choice_vehicle_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Type of Vehicle: "
+        android:textColor="#fff"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"/>
+    <RadioGroup
+        android:layout_marginTop="-10dp"
+        android:id="@+id/vehicle_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/two_wheeler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#2196f3"
+            android:text="Two wheeler"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/cars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#2196f3"
+            android:text="Cars"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/Vans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#2196f3"
+            android:text="Vans"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/Tampos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#2196f3"
+            android:text="Tampo"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/Bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#2196f3"
+            android:text="Bus"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/Truck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#2196f3"
+            android:text="Truck"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="#2196f3"
+        android:text="Proceed"
+        android:textColor="#fff" />
+
+</LinearLayout>
