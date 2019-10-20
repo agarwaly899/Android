@@ -81,6 +81,7 @@ public class VehicleActivity extends AppCompatActivity {
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int maxspeed=40;
 //             code here
                 int selectedId = radioGroup.getCheckedRadioButtonId();

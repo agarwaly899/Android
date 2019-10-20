@@ -50,9 +50,7 @@ public class HomeFragment extends Fragment {
                     startActivity(i);
                 } else {
                     requestSmsPermission();
-                    Intent i=new Intent(getActivity(), StartActivity.class);
-                    getActivity().finish();
-                    startActivity(i);
+
                 }
 
             }
@@ -97,6 +95,9 @@ public class HomeFragment extends Fragment {
         if(requestCode==1){
             if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
                 Toast.makeText(getActivity(),"Permission Granted!",Toast.LENGTH_SHORT);
+                Intent i=new Intent(getActivity(), StartActivity.class);
+                getActivity().finish();
+                startActivity(i);
             }
             else {
                 Toast.makeText(getActivity(),"Permission Denied!",Toast.LENGTH_SHORT);
