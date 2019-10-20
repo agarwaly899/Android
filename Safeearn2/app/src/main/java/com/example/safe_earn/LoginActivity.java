@@ -41,9 +41,15 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = mTextEmail.getText().toString().trim();
                 String pwd = mTextPass.getText().toString().trim();
-                progressDialog.setMessage("Login in Progress...");
-                progressDialog.show();
-                login(email,pwd);
+                if (!(email.isEmpty()) && !(pwd.isEmpty())) {
+                    progressDialog.setMessage("Login in Progress...");
+                    progressDialog.show();
+                    login(email, pwd);
+                }
+                else {
+                    Toast.makeText(LoginActivity.this, "Some field is Empty!!", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                }
             }
         });
     }

@@ -60,14 +60,20 @@ public class SignUp extends AppCompatActivity {
                 String user = mTextUser.getText().toString().trim();
                 String mob1 = Mob1.getText().toString().trim();
                 String mob2 = Mob2.getText().toString().trim();
-                progressDialog.setMessage("Signing Up...");
-                progressDialog.show();
-                if(pwd.equals(cpwd)) {
-                    register(email, pwd,user,mob1,mob2);
+                if (!(email.isEmpty()) && !(pwd.isEmpty()) && !(user.isEmpty()) && !(mob1.isEmpty()) && !(mob2.isEmpty())) {
+                    progressDialog.setMessage("Signing Up...");
+                    progressDialog.show();
+                    if(pwd.equals(cpwd)) {
+                        register(email, pwd,user,mob1,mob2);
+                    }
+                    else {
+                        progressDialog.dismiss();
+                        Toast.makeText(SignUp.this, "Password Mismatched!!", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 else {
+                    Toast.makeText(SignUp.this, "Some field is Empty!!", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
-                    Toast.makeText(SignUp.this, "Password Mismatched!!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
